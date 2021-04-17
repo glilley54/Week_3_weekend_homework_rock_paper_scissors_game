@@ -7,14 +7,13 @@ from models.player import Player
 
 @app.route('/')
 def index():
-    return "Welcome to the Rock,Paper and Scissors game!"
-    #return render_template('index.html' title = 'Game',)
+    return render_template('index.html', title= 'Game')
 
 @app.route('/<choice_1>/<choice_2>')
 def result(choice_1,choice_2):
     game(choice_1,choice_2)
     winner = game(choice_1,choice_2)
-    return render_template('index.html', title= "Game", winner = winner)
+    return render_template('index.html', title= 'Game', winner = winner)
 
     
 
