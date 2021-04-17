@@ -1,11 +1,14 @@
-import models.player import *
+from models.player import *
 
 player1 = ("John", "rock")
-player2 = ("Andrew, Scissors")
+player2 = ("Andrew, scissors")
 
-def game (player1,player2):
+players = [player1,player2]
+
+# changed to choice one ratherthan player 1?±
+def game (choice_1, choice_2):
     if player1.choice == "rock" and player2.choice == "scissors":
-        return player1
+        return player1 # put string player 1 wins!
 
     if player1.choice =="scissors" and player2.choice == "paper":
         return player1
