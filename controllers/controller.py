@@ -15,6 +15,10 @@ def result(choice_1,choice_2):
     winner = game(choice_1,choice_2)
     return render_template('index.html', title= 'Game', winner = winner)
 
+@app.route('/welcome')
+def welcome():
+    return render_template(('welcome.html', title= 'welcome'))
+
     
 
   
