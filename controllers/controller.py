@@ -17,7 +17,4 @@ def result(choice_1,choice_2):
 
     
 
-    #return f"{game.Player}  wins by playing {Player.choice}"
-
-#winner = game(cho 1, ch2
-#render ())
+  
