@@ -17,7 +17,7 @@ def result(choice_1,choice_2):
 
 @app.route('/welcome')
 def welcome():
-    return render_template(('welcome.html', title= 'welcome'))
+    return render_template('welcome.html',title= "welcome")
 
     
 
